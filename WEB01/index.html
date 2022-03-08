@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our First Web Page</title>
+    <style>
+
+
+    </style>
+    <!-- /* internal class */ -->
+    <!-- Harici css dosyasını içeriaktardık. -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hello Html</h1>
-    
+
+
+    <!-- div ve section gibi düşünebiliriz.Amaç ana dili dll den ayırır.Tüm web tasarımı içeren blog -->
+    <!-- <main style="background-color: rgb(82, 74, 158); padding: 1rem;"> -->
+    <main>
+
+        <!-- div bölümler oluşturmayı sağlayan bir elementtir -->
+
+        <!-- <div style="background-color: bisque; display: inline; margin: 1rem;"> -->
+        <!-- display:inlene bir nevi span görevini yapıyor -->
+        <section class="kutu bolum">
+            <!-- birden fazla class verebiliriz aralarında boşluk bırakarak -->
+            1Burası bir section bölümüdür.
+        </section>
+
+        <section id="section2">
+            2Burası bir section bölümüdür.
+            <section class="bolum">
+                BÖLÜM
+            </section>
+        </section>
+
+        <!-- section div ile aynı işlemi yapar ama div in yeni versiyonu gibi düşünebiliriz -->
+        <section style="background-color: aqua;">Burası bir section bölümüdür</section>
+
+        <!-- Kullandığı kadarki alanı doldurur -->
+        <span style="background-color: chartreuse;">Burası bir Span bölümüdür</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quibusdam.
+            Minus laudantium velit earum at. Blanditiis delectus ipsam, enim minus totam mollitia, rerum nulla natus
+            magnam, dicta nisi. Magnam, veritatis.
+        </p>
+        <hr>
+        <ul style="list-style-type: none;">
+            <li class="anasayfa-li"><a href="ugur.html">Uğur Okan Çivgin </a></li>
+            <li class="anasayfa-li">Semanur Mutlu</li>
+            <li class="anasayfa-li">Mehmet Özben</li>
+        </ul>
+        <br>
+        <ol>
+            <li class="anasayfa-li">Ayşe</lyei>
+            <li class="anasayfa-li">Fatma</li>
+            <li class="anasayfa-li">Hayrite</li>
+        </ol>
+
+
+        <img src="https://www.yalispor.com.tr/minio-url/blog/muhammed-ali-nereli_5eff0b7f0ddc6.jpg"
+            alt="Profil Fotoğrafı">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XIfdV3KrSI4" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    </main>
+
+
 </body>
+
 </html>
