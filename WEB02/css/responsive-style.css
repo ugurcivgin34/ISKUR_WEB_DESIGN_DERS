@@ -1,0 +1,45 @@
+/* 800px altına düşüldüğünde aşağıdakileri de uygula */ 
+
+@media screen and (max-width: 800px) {
+
+    #middle-left
+    {
+        display: none; /* Tamamen silinsin */
+    }
+    #middle-right
+    {
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #nav 
+    {
+        height: unset !important;
+    }
+    div#menu ul
+    {
+        padding-left:0 !important;
+    }
+    div#menu li
+    {
+        float: unset !important;
+        border-right: unset !important;
+        border-bottom: 2px solid #4FD3C4;
+    }
+    /* div#menu li:nth-child(1) */
+    div#menu li:first-child
+    {
+        border-left: unset !important;
+    }
+    div#menu li:last-child
+    {
+        border-bottom: unset !important;
+    }
+    .yazi{
+        padding: 20px !important;
+    }
+    .baslikdetay {
+        width: 100% !important;
+    }
+}

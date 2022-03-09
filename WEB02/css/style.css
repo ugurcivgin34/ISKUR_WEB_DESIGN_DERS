@@ -1,0 +1,142 @@
+body
+{
+    
+    
+}
+main
+{
+    background-color: #488FB1;
+    width: 85%;
+    /* sağdan soldan eşitle, yukardan 0 */
+    margin: 0 auto;
+
+    /* daha sonra siliceğiz */
+    min-height: 750px;
+}
+
+div#advertise
+{
+    /* width: 100%; */
+    height: 120px;
+    background-color: #4FD3C4;
+
+}
+
+div#nav
+{
+    height: 50px;
+    /* daha sonra siliceğiz */
+    background-color: #533E85;
+    
+}
+
+div#middle
+{
+    min-height: 450px;
+
+    background-color:#C1F8CF ;
+}
+
+div#footer 
+{
+    height: 130px;
+    background-color: #72f578;
+    display: inline-block;
+}
+
+div#middle-left
+{
+    min-height: 450px;
+    height: 100%;
+    width: 20%;
+    background-color: #570530;
+    float: left;
+}
+div#middle-right
+{
+    min-height: 450px;
+    width: 70%;
+    background-color: #C65D78;
+    float: left;
+    padding: 0 5%;
+    
+}
+
+div#menu ul
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    padding-left: 25px;
+}
+
+div#menu li 
+{
+    list-style-type: none;
+
+    /* yan yana getir */
+    float: left;
+    padding: 7px;
+   
+    height: 36px;
+    line-height: 36px;
+    border-right: 2px solid #4FD3C4;
+    
+    
+}
+div#menu li:first-child
+{
+    border-left: 2px solid #4FD3C4;
+}
+
+div#menu li a
+{
+    color: #C1F8CF;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+/* Referans.html */
+div.referance-box
+{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    display: inline-block;
+    margin: 15px;
+}
+div.yazi img
+{
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    background-color: antiquewhite;
+    border-radius: 3px;
+    margin: 5px;
+    float: left;
+}
+.yazi h5
+{
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+
+.yazi p 
+{
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div.baslikdetay
+{
+    float: left;
+    padding: 5px;
+    width: 350px;
+    
+  
+}
+.yazi
+{
+    padding: 15px 0;
+}
