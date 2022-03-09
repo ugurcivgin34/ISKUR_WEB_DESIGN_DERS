@@ -1,49 +1,41 @@
-body
+body 
 {
-    
     
 }
 main
 {
     background-color: #488FB1;
     width: 85%;
-    /* sağdan soldan eşitle, yukardan 0 */
     margin: 0 auto;
-
-    /* daha sonra siliceğiz */
+    
+    /* daha sonra sileceğiz */ 
     min-height: 750px;
 }
-
 div#advertise
 {
-    /* width: 100%; */
     height: 120px;
+
+    /* daha sonra sileceğiz */ 
     background-color: #4FD3C4;
-
 }
-
 div#nav
 {
     height: 50px;
-    /* daha sonra siliceğiz */
-    background-color: #533E85;
     
+    /* daha sonra sileceğiz */ 
+    background-color: #533E85;
 }
-
 div#middle
 {
     min-height: 450px;
-
-    background-color:#C1F8CF ;
+    background-color: #C1F8CF;
 }
-
-div#footer 
+div#footer
 {
     height: 130px;
-    background-color: #72f578;
+    background-color: #76c8ff;
     display: inline-block;
 }
-
 div#middle-left
 {
     min-height: 450px;
@@ -56,52 +48,46 @@ div#middle-right
 {
     min-height: 450px;
     width: 70%;
-    background-color: #C65D78;
+    background-color: #C65D7B;
     float: left;
     padding: 0 5%;
-    
 }
-
 div#menu ul
 {
     margin: 0;
     padding: 0;
     height: 100%;
-    padding-left: 25px;
+    padding-left:25px;
 }
-
-div#menu li 
+div#menu li
 {
     list-style-type: none;
-
-    /* yan yana getir */
     float: left;
     padding: 7px;
-   
     height: 36px;
     line-height: 36px;
-    border-right: 2px solid #4FD3C4;
-    
-    
+    border-right:2px solid #4FD3C4;
 }
+/* div#menu li:nth-child(1) */
 div#menu li:first-child
 {
-    border-left: 2px solid #4FD3C4;
+    border-left:2px solid #4FD3C4;
 }
-
 div#menu li a
 {
     color: #C1F8CF;
-    font-size: 1.3rem;
+    font-size:1.3rem;
     text-decoration: none;
 }
 
-/* Referans.html */
+
+
+/*referans.html*/
 div.referance-box
 {
     width: 100px;
     height: 100px;
-    background-color: crimson;
+    background-color: rgb(158, 158, 158);
     display: inline-block;
     margin: 15px;
 }
@@ -112,29 +98,23 @@ div.yazi img
     padding: 5px;
     background-color: antiquewhite;
     border-radius: 3px;
-    margin: 5px;
+    margin: 5px;    
     float: left;
 }
-.yazi h5
-{
+.yazi h3{
     font-size: 1.3rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
 }
-
-.yazi p 
-{
+.yazi p{
     font-size: 1.2rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-div.baslikdetay
+.baslikdetay
 {
     float: left;
     padding: 5px;
     width: 350px;
-    
-  
 }
 .yazi
 {

@@ -5,6 +5,7 @@
     #middle-left
     {
         display: none; /* Tamamen silinsin */
+        /* width: 100% !important; */
     }
     #middle-right
     {
