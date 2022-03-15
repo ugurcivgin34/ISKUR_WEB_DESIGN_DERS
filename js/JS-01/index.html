@@ -1,7 +1,3 @@
-https://github.com/Project103N
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,85 +17,235 @@ https://github.com/Project103N
         */
        // tek satır yorum
 
-        var sayi = 5;  // 1 den fazla kez tanımlanabilir.
-        var sayi = 10;
+        // var sayi = 5;  // 1 den fazla kez tanımlanabilir.
+        // var sayi = 10;
 
-        let sayi2 = 5; // 1 defa tanımlanabilir.
-        sayi2 = 10;
-        console.log(sayi2);
+        // let sayi2 = 5; // 1 defa tanımlanabilir.
+        // sayi2 = 10;
+        // console.log(sayi2);
 
-        const pi = 3.14; // Sabit veri
-        // pi = 3; // hata verir!
+        // const pi = 3.14; // Sabit veri
+        // // pi = 3; // hata verir!
 
 
-        // alert("Merhabalar");
+        // // alert("Merhabalar");
 
-        ///////////////////////
-        //    VERİ TİPLERİ   //
-        ///////////////////////
+        // ///////////////////////
+        // //    VERİ TİPLERİ   //
+        // ///////////////////////
 
-        // Number: tam ve ondalıklı sayılar + - 2 üssü 53
-        // BigInt: Number'dan daha büyük sayılar için.
-        // String
-        // Boolean
-        // null
-        // Object
+        // // Number: tam ve ondalıklı sayılar + - 2 üssü 53
+        // // BigInt: Number'dan daha büyük sayılar için.
+        // // String
+        // // Boolean
+        // // null
+        // // Object
 
-        //////////////////////////
-        //    Tip Dönüşümleri   //
-        //////////////////////////
+        // //////////////////////////
+        // //    Tip Dönüşümleri   //
+        // //////////////////////////
 
-        let variable = "125";
-        console.log(typeof variable);
-        console.log(typeof alert);
-        console.log(typeof 7);
-        console.log(typeof Math);
-        console.log(typeof true);
+        // let variable = "125";
+        // console.log(typeof variable);
+        // console.log(typeof alert);
+        // console.log(typeof 7);
+        // console.log(typeof Math);
+        // console.log(typeof true);
 
-        var sayi = Number("145");
-        var mesaj = "sayi değişkeninin veri tipi: "+typeof sayi;
-        console.log(mesaj);
+        // var sayi = Number("145");
+        // var mesaj = "sayi değişkeninin veri tipi: "+typeof sayi;
+        // console.log(mesaj);
 
-        console.log(typeof String(145));
-        console.log(Boolean("NA303"));
-        console.log(Boolean(""));
-        console.log(typeof Boolean("789"));
+        // console.log(typeof String(145));
+        // console.log(Boolean("NA303"));
+        // console.log(Boolean(""));
+        // console.log(typeof Boolean("789"));
 
-        // JSON Okuma ! => String to Object
-        var strVeri = '{"name":"Ahmet","surname":"Çelik"}';
-        console.log(typeof strVeri);
+        // // JSON Okuma ! => String to Object
+        // var strVeri = '{"name":"Ahmet","surname":"Çelik"}';
+        // console.log(typeof strVeri);
         
-        let objVeri = JSON.parse(strVeri);
-        console.log(objVeri);
-        console.log(objVeri.name);
-        console.log(objVeri.surname);
+        // let objVeri = JSON.parse(strVeri);
+        // console.log(objVeri);
+        // console.log(objVeri.name);
+        // console.log(objVeri.surname);
 
-        // Stringify => Object to String
-        let objPerson = {
-            name:"Mahmut",
-            surname:"Şeker",
-            address: {city:"Sivas",town:"Suşehri"}
-        };
+        // // Stringify => Object to String
+        // let objPerson = {
+        //     name:"Mahmut",
+        //     surname:"Şeker",
+        //     address: {city:"Sivas",town:"Suşehri"}
+        // };
 
-        // university.mongodb.com
+        // // university.mongodb.com
 
-        console.log(objPerson.name);
-        console.log(objPerson.surname);
-        console.log(objPerson.address.city);
-        console.log(objPerson.address.town);
-        // Burada nesne tanımladık.
+        // console.log(objPerson.name);
+        // console.log(objPerson.surname);
+        // console.log(objPerson.address.city);
+        // console.log(objPerson.address.town);
+        // // Burada nesne tanımladık.
 
-        console.log(typeof objPerson);
-        let strPerson = JSON.stringify(objPerson);
-        console.log(strPerson);
-        console.log(typeof strPerson);
+        // console.log(typeof objPerson);
+        // let strPerson = JSON.stringify(objPerson);
+        // console.log(strPerson);
+        // console.log(typeof strPerson);
+
+        // ////////////////////////////
+        // // Mantıksal Operatörler ///
+        // ////////////////////////////
+
+        // // const pi = 3.14; // sabit
+        // let a =false;
+        // let b = false;
+        // let orOperator = a || b; // a ve b 'den en az 1 tanesi true ise true
+        // console.log("a : "+a);
+        // console.log("b : "+b);
+        // console.log("orOperator : "+orOperator);
 
 
-        //Array Loop Examples//
-        // Personel bilgilerini objeden diziye atıp 
+        // let c = true;
+        // let d = false;
+        // let andOperator = c && d;// c ve d 'den 2 tanesi de true ise 
+        // console.log("c : "+c);
+        // console.log("d : "+d);
+        // console.log("andOperator : "+andOperator);
+
+        // let state;
+        // console.log(state)
+        // let notState = !state; // state'in tersi değeri verir.
+
+        // let msg = "Boğa";
+        // let booleanMsg = !!msg;  // Boolean tipine dönüştürür.
+        // console.log("booleanMsg : " + booleanMsg)
+
+        /*
+A falsy value is something which evaluates to FALSE, for instance when checking a variable. There are only six falsey values in JavaScript: undefined, null, NaN, 0, "" (empty string), and false of course.
+        */
+
+        /*
+            "" + 1 + 0 = "10" // (1)
+            "" - 1 + 0 = -1 // (2)
+            true + false = 1
+            6 / "3" = 2
+            "2" * "3" = 6
+            4 + 5 + "px" = "9px"
+            "$" + 4 + 5 = "$45"
+            "4" - 2 = 2
+            "4px" - 2 = NaN
+            7 / 0 = Infinity
+            " -9  " + 5 = " -9  5" // (3)
+            " -9  " - 5 = -14 // (4)
+            null + 1 = 1 // (5)
+            undefined + 1 = NaN // (6)
+        */
+
+        ///////////////////////////////
+        //// alert-prompt-confirm  ////
+        ///////////////////////////////    
+
+        // let isim = prompt("İsim","");
+        // alert(isim);
+        // console.log(isim);
+
+        // let result = confirm("Mola verelim mi?");
+        // console.log(result)
+
+
+        // /////////////////////////////
+        // //          Loops        ////
+        // ///////////////////////////// 
+
+        // let counter = 1
+        // while(counter<=5)
+        // {
+        //     console.log(counter + ". Merhaba")
+        //     // counter += 1
+        //     counter++
+        // }
+
+        // do {
+        // // loop body
+        // } while (condition);
+
+
+        
+        // for(let i=0;i<=4;i++)
+        // {
+        //     if(i==2)
+        //     {
+        //         break;
+        //     } //contine;
+        //     else
+        //     {
+        //         console.log(i+1+". Dünya")
+        //     }
+        // }
+
+    //     /////////////////////////////
+    //     //         Arrays        ////
+    //     ///////////////////////////// 
+        
+    //     let arr = new Array();
+    //     let arr2 = [];
+    //     let fruits = ["Apple", "Orange", "Plum"];
+
+    //     console.log(fruits[1])
+
+    //     fruits[1] = "Banana"; // değiştirme
+    //     fruits[3] = "Strawberry"; // ekleme
+    //     console.log(fruits[1])
+    //     console.log(fruits[2])
+    //     console.log(fruits)
+
+    //     console.log(fruits.pop()) // dizideki son elemanı al.
+    //     console.log(fruits) // diziyi yazdır
+    //     fruits.push("Kiraz"); // Diziye Kiraz ekle
+    //     console.log(fruits) // diziyi yazdır.
+    //     /*
+    //         splice(start)
+    //         splice(start, deleteCount)
+    //         splice(start, deleteCount, item1)
+    //         splice(start, deleteCount, item1, item2, itemN)
+    //     */
+    //    fruits.splice(1,1) // banana sil.
+    //    fruits.splice(1,1,"Muz","Karpuz",1988)
+    //    // 1. indisten itibaren 1 tane sil. Ve sonra 3 elemanı ekle.
+
+    //    let muzIndex = fruits.indexOf("Muz") // Muz un indeksini bul
+    // //    fruits.splice(muzIndex,1) // Silmede kullan
+
+    //    console.log(fruits)
+
+
+            //// Array Loop Examples ////
+            // Aşağıdaki personel bilgilerini objeden diziye atıp dizide döngü ile gösteren kodu yazınız.
+
+            // id,name,surname,birthyear
+            "use strict"; // ES6 kuralları zorunlu olsun.
+            let person = {
+                id:1,
+                name:"Ayşe",
+                surname:"Aslan",
+                birthyear:1990
+            };
+
+            let personArray = [person.id,person.name,person.surname,person.birthyear];
+            
+            console.log(personArray + " "+ typeof personArray);
+
+            for(let i=0;i<personArray.length;i++)
+            {
+                console.log("person info: "+personArray[i]);
+            }
+            // forEach döngüsü
+            personArray.forEach(item=>{
+                console.log(item);
+            });
+
+
 
 
 
     </script>
 </body>
-</html> 
+</html>
