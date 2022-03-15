@@ -1,0 +1,105 @@
+https://github.com/Project103N
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/4602062?v=4">
+    <title>JS 01</title>
+</head>
+<body>
+    <p>Hello JS!</p>
+    <script>
+        /*
+            Çoklu
+            yorum
+            satırı
+        */
+       // tek satır yorum
+
+        var sayi = 5;  // 1 den fazla kez tanımlanabilir.
+        var sayi = 10;
+
+        let sayi2 = 5; // 1 defa tanımlanabilir.
+        sayi2 = 10;
+        console.log(sayi2);
+
+        const pi = 3.14; // Sabit veri
+        // pi = 3; // hata verir!
+
+
+        // alert("Merhabalar");
+
+        ///////////////////////
+        //    VERİ TİPLERİ   //
+        ///////////////////////
+
+        // Number: tam ve ondalıklı sayılar + - 2 üssü 53
+        // BigInt: Number'dan daha büyük sayılar için.
+        // String
+        // Boolean
+        // null
+        // Object
+
+        //////////////////////////
+        //    Tip Dönüşümleri   //
+        //////////////////////////
+
+        let variable = "125";
+        console.log(typeof variable);
+        console.log(typeof alert);
+        console.log(typeof 7);
+        console.log(typeof Math);
+        console.log(typeof true);
+
+        var sayi = Number("145");
+        var mesaj = "sayi değişkeninin veri tipi: "+typeof sayi;
+        console.log(mesaj);
+
+        console.log(typeof String(145));
+        console.log(Boolean("NA303"));
+        console.log(Boolean(""));
+        console.log(typeof Boolean("789"));
+
+        // JSON Okuma ! => String to Object
+        var strVeri = '{"name":"Ahmet","surname":"Çelik"}';
+        console.log(typeof strVeri);
+        
+        let objVeri = JSON.parse(strVeri);
+        console.log(objVeri);
+        console.log(objVeri.name);
+        console.log(objVeri.surname);
+
+        // Stringify => Object to String
+        let objPerson = {
+            name:"Mahmut",
+            surname:"Şeker",
+            address: {city:"Sivas",town:"Suşehri"}
+        };
+
+        // university.mongodb.com
+
+        console.log(objPerson.name);
+        console.log(objPerson.surname);
+        console.log(objPerson.address.city);
+        console.log(objPerson.address.town);
+        // Burada nesne tanımladık.
+
+        console.log(typeof objPerson);
+        let strPerson = JSON.stringify(objPerson);
+        console.log(strPerson);
+        console.log(typeof strPerson);
+
+
+        //Array Loop Examples//
+        // Personel bilgilerini objeden diziye atıp 
+
+
+
+    </script>
+</body>
+</html> 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+         //Array Loop Examples//
+        // Personel bilgilerini objeden diziye atıp  dizide döngü ile gösteren kodu yazınız
+        //id,name,surname,birthyear
+        "use strict"; //ES6 kuralları zorunlu olsun.
+        let person = 
+        {
+            id:1,
+            name : "Uğur",
+            surname:"Çivgin",
+            birthyear:1994
+        };
+
+        let personArray = [person.id,person.name,person.surname,person.birthyear];
+        console.log(personArray + " " + typeof personArray);
+
+        for (let i = 0; i < personArray.length; i++) {
+            console.log("person info:" + personArray[i]);
+        }
+
+        //foreach döngüsü
+        personArray.forEach(item=>{
+            console.log(item);
+        })
+    </script>
+</body>
+
+</html>

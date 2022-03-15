@@ -58,6 +58,25 @@
         {
             min-height: 140px;
         }
+        .follow-logos img 
+        {
+            width: 35px;
+            height: 35px;
+            border-radius: 3px;
+            margin: 2px;
+            background-color: white;
+        }
+        .photos-videos img 
+        {
+            width: 55px;
+            height: 55px;
+            border-radius: 3px;
+            margin: 2px;
+            background-color: white;
+        }
+        .h40{
+            height: 40px;
+        }
     </style>
     <title>Twitter</title>
 </head>
@@ -92,14 +111,78 @@
 
         <!-- second row -->
         <div class="row minheight140">
-            <div class="col-lg-3 minheight140">
+            <div id="soldiv" class="col-lg-3 minheight140">
                 <div id="profile-img" style="height: 250px;" class="d-flex justify-content-start align-items-lg-end">
                     <img style="    height: 150px;
                     border-radius: 8px;" src="https://avatars.githubusercontent.com/u/4602062?v=4">
                 </div>
+
+                <!-- Profile Info -->
+                <div class="" style="height: 220px;" >
+                    <h5>Username</h5>
+                    <a>@username</a>
+                    <p>Merhaba boş boş adamları bu hesaptan takip edip zamanımı öldürüyorum buralarda.</p>
+                    <i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;&nbsp;İstanbul</i><br>
+                    <i class="fa fa-link" aria-hidden="true"><a style="text-decoration: none;" href="https://github.com/mhmtdmr">&nbsp;&nbsp;Github.Com/mhmtdmr</a></i><br>
+                    <i class="fa fa-clock-o" aria-hidden="true">&nbsp;&nbsp;Since 2012</i>
+                    <div style="background-color: #e8eff4;
+                    padding: 9px;
+                    border: 1px solid #b2c9db;
+                    border-radius: 4px;
+                    justify-content: center;
+                    text-align: center;
+                    margin: 8px 0;">
+                    <a style="background-color:#fff; text-decoration: none; width: 100%; border: 1px solid #b2c9db; color:#679dc6" class="btn">Tweet to Username</a>
+                    </div>
+                    <div id="followers-media" style="padding: 10px;">
+                        <i class="fa fa-user" aria-hidden="true">  65 followers you know</i>
+                        <div class="follow-logos" style="text-align: center;">
+                            <img src="https://pbs.twimg.com/profile_images/1062993041324171265/CcUjyxc9_400x400.jpg">
+                            <img src="https://pbs.twimg.com/profile_images/1062993041324171265/CcUjyxc9_400x400.jpg">
+                            <img src="https://pbs.twimg.com/profile_images/1062993041324171265/CcUjyxc9_400x400.jpg">
+                            <img src="https://pbs.twimg.com/profile_images/1062993041324171265/CcUjyxc9_400x400.jpg">
+                            <img src="https://pbs.twimg.com/profile_images/1062993041324171265/CcUjyxc9_400x400.jpg">
+                            <img src="https://pbs.twimg.com/profile_images/1062993041324171265/CcUjyxc9_400x400.jpg">
+                            <img src="https://pbs.twimg.com/profile_images/1062993041324171265/CcUjyxc9_400x400.jpg">
+                            <img src="https://pbs.twimg.com/profile_images/1062993041324171265/CcUjyxc9_400x400.jpg">
+                            <img src="https://pbs.twimg.com/profile_images/1062993041324171265/CcUjyxc9_400x400.jpg">
+                            <img src="https://pbs.twimg.com/profile_images/1062993041324171265/CcUjyxc9_400x400.jpg">
+                        </div>
+                        <i class="fa fa-camera" aria-hidden="true">  35 Photos and Videos</i>
+                        
+                        <div class="photos-videos" style="text-align: center;">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/18/7d/b2/ab/kadikoy-istanbul.jpg">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/18/7d/b2/ab/kadikoy-istanbul.jpg">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/18/7d/b2/ab/kadikoy-istanbul.jpg">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/18/7d/b2/ab/kadikoy-istanbul.jpg">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/18/7d/b2/ab/kadikoy-istanbul.jpg">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/18/7d/b2/ab/kadikoy-istanbul.jpg">
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-lg-6 minheight140"></div>
-            <div class="col-lg-3 minheight140"></div>
+            <div id="ortadiv" class="col-lg-6 minheight140">
+                <div id="tampon" class="d-flex"  style="height: 240px; align-items: flex-end;">
+                    <div class="h40 col-2">
+                        <h4 style="    height: 14px;
+                        line-height: 15px;
+                        font-size: 11px;
+                        margin-top: 5px;
+                        padding: 0;
+                        color:#727272">TWEETS</h4>
+                        <h4 style="    height: 13px;
+                        line-height: 0px;
+                        font-size: 18px;">1,759</h4>
+                    </div> 
+                    <div class="h40 col-2"></div> 
+                    <div class="h40 col-2"></div> 
+                    <div class="h40 col-2"></div> 
+                    <div class="h40 col-2"></div> 
+                    <div class="h40 col-2"></div> 
+                </div>
+            </div>
+            <div id="sagdiv" class="col-lg-3 minheight140"></div>
         </div>
 
 
@@ -108,7 +191,7 @@
         <div class="row" style="height: 40px; background-color: #fefefe;"></div>
         <div id="header-image" class="row bg-primary" style="height: 200px;"></div>
         <div class="row" style="height: 40px;  background-color: #fefefe;"></div>
-        <div class="row" style="height: 520px; background-color: #f4f7f9;"></div>
+        <div class="row" style="min-height: 580px; background-color: #f4f7f9;"></div>
     </div>
 
 
