@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/4602062?v=4">
     <title>JS 01</title>
 </head>
+
 <body>
     <p>Hello JS!</p>
     <script>
@@ -15,7 +17,7 @@
             yorum
             satırı
         */
-       // tek satır yorum
+        // tek satır yorum
 
         // var sayi = 5;  // 1 den fazla kez tanımlanabilir.
         // var sayi = 10;
@@ -64,7 +66,7 @@
         // // JSON Okuma ! => String to Object
         // var strVeri = '{"name":"Ahmet","surname":"Çelik"}';
         // console.log(typeof strVeri);
-        
+
         // let objVeri = JSON.parse(strVeri);
         // console.log(objVeri);
         // console.log(objVeri.name);
@@ -168,7 +170,7 @@ A falsy value is something which evaluates to FALSE, for instance when checking 
         // } while (condition);
 
 
-        
+
         // for(let i=0;i<=4;i++)
         // {
         //     if(i==2)
@@ -181,66 +183,225 @@ A falsy value is something which evaluates to FALSE, for instance when checking 
         //     }
         // }
 
-    //     /////////////////////////////
-    //     //         Arrays        ////
-    //     ///////////////////////////// 
+        //     /////////////////////////////
+        //     //         Arrays        ////
+        //     ///////////////////////////// 
+
+        //     let arr = new Array();
+        //     let arr2 = [];
+        //     let fruits = ["Apple", "Orange", "Plum"];
+
+        //     console.log(fruits[1])
+
+        //     fruits[1] = "Banana"; // değiştirme
+        //     fruits[3] = "Strawberry"; // ekleme
+        //     console.log(fruits[1])
+        //     console.log(fruits[2])
+        //     console.log(fruits)
+
+        //     console.log(fruits.pop()) // dizideki son elemanı al.
+        //     console.log(fruits) // diziyi yazdır
+        //     fruits.push("Kiraz"); // Diziye Kiraz ekle
+        //     console.log(fruits) // diziyi yazdır.
+        //     /*
+        //         splice(start)
+        //         splice(start, deleteCount)
+        //         splice(start, deleteCount, item1)
+        //         splice(start, deleteCount, item1, item2, itemN)
+        //     */
+        //    fruits.splice(1,1) // banana sil.
+        //    fruits.splice(1,1,"Muz","Karpuz",1988)
+        //    // 1. indisten itibaren 1 tane sil. Ve sonra 3 elemanı ekle.
+
+        //    let muzIndex = fruits.indexOf("Muz") // Muz un indeksini bul
+        // //    fruits.splice(muzIndex,1) // Silmede kullan
+
+        //    console.log(fruits)
+
+
+        //// Array Loop Examples ////
+        // Aşağıdaki personel bilgilerini objeden diziye atıp dizide döngü ile gösteren kodu yazınız.
+
+        // id,name,surname,birthyear
+        // "use strict"; // ES6 kuralları zorunlu olsun.
+        // let person = {
+        //     id:1,
+        //     name:"Ayşe",
+        //     surname:"Aslan",
+        //     birthyear:1990
+        // };
+
+        // let personArray = [person.id,person.name,person.surname,person.birthyear];
+
+        // console.log(personArray + " "+ typeof personArray);
+
+        // for(let i=0;i<personArray.length;i++)
+        // {
+        //     console.log("person info: "+personArray[i]);
+        // }
+        // // forEach döngüsü
+        // personArray.forEach(item=>{
+        //     console.log(item);
+        // });
+
+
+
+        // interface IBanka
+        // {
+        //     bool EFT();
+        // }
+
+        // public class Garanti:IBanka
+        // {
+        //     KullaniciID {get;Set}
+        //     KullaniciIban ..
+        //     public bool EFT(hedefIban,tutar)
+        //     {
+        //         ....
+        //     }
+        // }
+
+        // public class Halkbank:IBanka
+        // {
+        //     KullaniciID {get;Set}
+        //     KullaniciIban ..
+        //     public bool EFT(hedefIban,tutar)
+        //     {
+        //         ....
+        //     }
+        // }
+
+
+        // bool EFT(IBanka banka,hedefIban,tutar)
+        // {
+        //     banka.EFT(hedefIban,tutar);
+        // }
+
+
+        // Interface IDataBase
+        // {
+        //     public bool Create();
+        //     public Data<T> Read();
+        //     public bool Update();
+        //     public bool Delete();
+        // }
+        // public class MSSQLContext:IDataBase
+        // {
+        //     public bool Create()
+        //     {
+        //         MSSQL sorguları veya Enitity Framework kodları.
+        //     }
+        //     ...
+        // }
+        // public class OracleContext:IDataBase
+        // {
+        //     public bool Create()
+        //     {
+        //         Oracle sorguları
+        //     }
+        //     ...
+        // }
+
+        // public bool Create(IDataBase nesne)
+        // {
+        //     nesne.Create();
+        // }
+
+        //   SQL Soruları
+        //   View,Trigger, Stored Procedure
+
+
+        //// Functions /////
+        // function topla(a,b) {
+        //     return a+b;
+        // }
+        // let toplam = topla(8,9);
+        // alert(toplam);
+
+
+        // let fark = function(a,b){
+        //     return a-b;
+        // }
+
+        // alert(fark(5,2))
+
+        // let sayHello = () => {alert("Halloooo");}
+        // let carp = (a,b)=> a*b;
+        // sayHello();
+        // alert(carp(7,8));
+
+
+
+        ///////// 
+        ///Map///
+        /////////
+
+        // let renklerEng = new Map();
+        // // map.set('anahtar','değer');
+
+        // // Yazma - Güncelleme
+        // renklerEng.set("kırmızı", "red");
+        // renklerEng.set("beyaz", "white");
+        // renklerEng.set("siyah", "black");
+
+        // //okuma
+        // console.log(renklerEng.get("siyah"));
+        // console.log(renklerEng["siyah"]);
+
+        // console.log(renklerEng.entries());
+        // console.log(renklerEng.keys());
+        // console.log(renklerEng.values());
+        // Personel verisini Map ile tutup kullanınız
+        //tc,adsoyad,maas,adres
+        // let personel = new Map()
+        // personel.set('tc', 12345678910);
+        // personel.set('adsoyad', "Uğur Okan Çivgin");
+        // personel.set('maas', 2500);
+        // personel.set('adres', "İstanbul");
+
+        // console.log(personel.entries());
+        // console.log(personel.values());
+
+
+
+        ///////////////////
+        //////Object//////
+        //////////////////
+
+        // var user = new Object();
+        // var user = {};
+        // var user =
+        // {
+        //     email: "john@doe.com",
+        //     pasword: "myPwd",
+        //     degrees: {
+        //         mathematic: 70,
+        //         physic: 75,
+        //         scienceHistory: 90
+        //     }
+        // };
+
         
-    //     let arr = new Array();
-    //     let arr2 = [];
-    //     let fruits = ["Apple", "Orange", "Plum"];
-
-    //     console.log(fruits[1])
-
-    //     fruits[1] = "Banana"; // değiştirme
-    //     fruits[3] = "Strawberry"; // ekleme
-    //     console.log(fruits[1])
-    //     console.log(fruits[2])
-    //     console.log(fruits)
-
-    //     console.log(fruits.pop()) // dizideki son elemanı al.
-    //     console.log(fruits) // diziyi yazdır
-    //     fruits.push("Kiraz"); // Diziye Kiraz ekle
-    //     console.log(fruits) // diziyi yazdır.
-    //     /*
-    //         splice(start)
-    //         splice(start, deleteCount)
-    //         splice(start, deleteCount, item1)
-    //         splice(start, deleteCount, item1, item2, itemN)
-    //     */
-    //    fruits.splice(1,1) // banana sil.
-    //    fruits.splice(1,1,"Muz","Karpuz",1988)
-    //    // 1. indisten itibaren 1 tane sil. Ve sonra 3 elemanı ekle.
-
-    //    let muzIndex = fruits.indexOf("Muz") // Muz un indeksini bul
-    // //    fruits.splice(muzIndex,1) // Silmede kullan
-
-    //    console.log(fruits)
+        // console.log(user.email);
+        // console.log(user.pasword);
+        // console.log(user.degrees.mathematic);
 
 
-            //// Array Loop Examples ////
-            // Aşağıdaki personel bilgilerini objeden diziye atıp dizide döngü ile gösteren kodu yazınız.
+         ///////////////////
+        //////İter//////
+        //////////////////
+        let numbers = [105,235,390];
+        let numbersIterator = numbers[Symbol.iterator](); 
+        
+        // next metodu her çalıştığında liste elemanlarına sırası ile ulaşır
+        console.log(numbersIterator.next()); 
+        console.log(numbersIterator.next());
+        console.log(numbersIterator.next());
+        
+        
 
-            // id,name,surname,birthyear
-            "use strict"; // ES6 kuralları zorunlu olsun.
-            let person = {
-                id:1,
-                name:"Ayşe",
-                surname:"Aslan",
-                birthyear:1990
-            };
+        
 
-            let personArray = [person.id,person.name,person.surname,person.birthyear];
-            
-            console.log(personArray + " "+ typeof personArray);
-
-            for(let i=0;i<personArray.length;i++)
-            {
-                console.log("person info: "+personArray[i]);
-            }
-            // forEach döngüsü
-            personArray.forEach(item=>{
-                console.log(item);
-            });
 
 
 
@@ -248,4 +409,5 @@ A falsy value is something which evaluates to FALSE, for instance when checking 
 
     </script>
 </body>
+
 </html>
